@@ -1,0 +1,51 @@
+# Dự án Giám Sát & Điều Khiển Độ Ẩm - Nhiệt Độ
+
+## 1. Giới thiệu
+Dự án này bao gồm thiết kế mạch điện tử và lập trình vi điều khiển để:
+- **Giám sát** độ ẩm và nhiệt độ môi trường.
+- **Điều khiển tự động**:
+  - **Máy tạo độ ẩm** khi độ ẩm thấp hơn ngưỡng cài đặt.
+  - **Quạt tản nhiệt** khi nhiệt độ vượt ngưỡng cho phép.
+
+Mạch được thiết kế trên **Altium Designer** và code viết bằng **C** dành cho vi điều khiển **PIC16F887**.
+
+---
+
+## 2. Nội dung Repository
+- **/MAIN.C** – Code điều khiển chính (đọc cảm biến, xử lý ngưỡng, điều khiển thiết bị).
+- **/tv_dht_11.c** – Code giao tiếp cảm biến nhiệt độ & độ ẩm DHT11.
+- **/tv_lcd_20x4.c** – Code hiển thị thông số trên LCD 20x4.
+- **/tv_pic_16f887_def.c** – Các định nghĩa và cấu hình cho vi điều khiển.
+- **/PCB_Project.zip** – Toàn bộ file mạch PCB (PrjPcb, PcbDoc, SchDoc...).
+
+---
+
+## 3. Cách sử dụng
+1. Tải file **PCB_Project.rar**.
+2. Giải nén file.
+3. Mở file `.PrjPcb` bằng **Altium Designer** (hoặc phần mềm tương thích).
+4. Nạp code từ các file **.c** vào vi điều khiển **PIC16F887**.
+5. Kết nối phần cứng:
+   - Cảm biến DHT11 để đo nhiệt độ & độ ẩm.
+   - Relay hoặc MOSFET điều khiển **máy tạo độ ẩm** và **quạt tản nhiệt**.
+6. Khi chạy:
+   - Độ ẩm & nhiệt độ hiển thị trên LCD.
+   - Máy tạo độ ẩm và quạt sẽ **tự động bật/tắt** dựa trên ngưỡng cài đặt.
+
+---
+
+## 4. Thông tin phần cứng
+- **Vi điều khiển**: PIC16F887
+- **Cảm biến**: DHT11
+- **Thiết bị điều khiển**:
+  - Máy tạo độ ẩm (qua relay/MOSFET)
+  - Quạt tản nhiệt (qua relay/MOSFET)
+- **Hiển thị**: LCD 20x4
+- **Nguồn**: 5V DC
+
+---
+
+## 5. Liên hệ
+- **Tác giả**: [Võ Tuấn Vỹ]
+- **Email**: [tuanvy.vo81@gmail.com]
+- **GitHub**: [https://github.com/tuanvyvo-hcmute]
