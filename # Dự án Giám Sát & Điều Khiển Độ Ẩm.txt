@@ -16,7 +16,7 @@ Mạch được thiết kế trên **Altium Designer** và code viết bằng **
 - **/tv_dht_11.c** – Code giao tiếp cảm biến nhiệt độ & độ ẩm DHT11.
 - **/tv_lcd_20x4.c** – Code hiển thị thông số trên LCD 20x4.
 - **/tv_pic_16f887_def.c** – Các định nghĩa và cấu hình cho vi điều khiển.
-- **/PCB_Project.zip** – Toàn bộ file mạch PCB (PrjPcb, PcbDoc, SchDoc...).
+- **/PCB_Project.rar** – Toàn bộ file mạch PCB (PrjPcb, PcbDoc, SchDoc...).
 
 ---
 
@@ -49,3 +49,4 @@ Mạch được thiết kế trên **Altium Designer** và code viết bằng **
 - **Tác giả**: [Võ Tuấn Vỹ]
 - **Email**: [tuanvy.vo81@gmail.com]
 - **GitHub**: [https://github.com/tuanvyvo-hcmute]
+
